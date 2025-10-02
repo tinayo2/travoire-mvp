@@ -1,0 +1,52 @@
+.alert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.alert-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.alert-description {
+  margin: 0;
+  font-size: 1rem;
+  max-width: 80%;
+}
+
+.alert-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.view-map-button {
+  background-color: #565656;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.alert-time {
+  font-size: 0.8rem;
+  color: #565656;
+}

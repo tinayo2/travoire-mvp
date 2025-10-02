@@ -1,0 +1,59 @@
+.home-page-container {
+  background-color: #E8D7FD;
+  min-height: 100vh;
+  padding-top: 60px; /* Space for the fixed header */
+}
+
+.main-content {
+  padding-bottom: 80px; /* Space for the fixed footer */
+}
+
+.hotspot-section {
+  padding: 1rem 0 1rem 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hotspot-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: black;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll; /* Enables the horizontal scrollbar */
+  padding-bottom: 15px; /* Adds space for the scrollbar itself */
+  
+  /* Hides the default scrollbar on WebKit browsers (optional, for clean look) */
+  scrollbar-width: none; /* Firefox */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-arrow {
+  position: absolute;
+  right: 10px;
+  background-color: white;
+  color: var(--primary-purple);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}

@@ -1,0 +1,130 @@
+.form-card {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* A semi-transparent version of your purple */
+  backdrop-filter: blur(20px);
+  box-sizing: border-box;
+  min-height: 200px;
+} 
+
+.login-form-container {
+  width: 85%;
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-left: 32px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 0.5rem;
+}
+
+.social-button {
+  width: 90%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* These new styles match the Sign Up button */
+  background-color: var(--primary-purple);
+  color: white; 
+  border: 1px solid white; /* Adds a subtle border to match the design */
+}
+
+/* This new rule changes the color of the SVG icons */
+.social-button img {
+  filter: brightness(0) invert(1);
+  height: 1.2rem;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  align-items: flex-start;
+}
+
+.forgot-password {
+    font-size: 0.75rem;
+}
+
+ .nav-button {
+    background-color: rgb(255, 255, 255, );
+    color: #000000;
+    border-color: #ffffff81;
+    border-radius: 5px;
+    gap: 10rem;
+    margin: 5px;
+
+ }
+
+.input-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  
+}
+
+.input-group input {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border don't increase width */
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* This is a light gray color */
+  opacity: 1; /* Ensures the color is fully visible */
+}
+
+/* Update this button style to be more general */
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* This is a new style for the Sign Up button, if needed */
+.signup-login-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Add a style for the toggle link text */
+.toggle-link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}

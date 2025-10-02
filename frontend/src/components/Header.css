@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  position: fixed; /* Keep it at the top */
+  width: 100vw; /* Spanning full width */
+  top: 0; /* Align to the top */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  backdrop-filter: blur(10px); /* Adjust the pixel value for more or less blur */
+  -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
+  box-sizing: border-box;
+}
+
+.header .logo {
+  height: 30px; /* Adjust as needed */
+}
+
+.header .nav-icons {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.header .nav-icons .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 25px;
+}
+
+/* Specific styles for the landing page header */
+.landing-page-header {
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.landing-page-header .logo {
+  height: 50px;
+}
+
+.main-app-header {
+  /* This rule will add or override specific styles for the main header */
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}

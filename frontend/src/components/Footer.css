@@ -1,0 +1,37 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(10px); /* Adjust the pixel value for more or less blur */
+  -webkit-backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.footer .nav-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer .nav-icons .icon {
+  font-size: 2rem;
+  color: var(--light-gray);
+  cursor: pointer;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.footer .nav-icons img {
+  height: 50px; /* Set a consistent height for all icons */
+  width: 50px; /* Set a consistent width for all icons */
+  cursor: pointer;
+}
+
+.footer .nav-icons .icon.active {
+  background-color: var(--secondary-purple);
+}

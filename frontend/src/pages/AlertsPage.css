@@ -1,0 +1,16 @@
+.alerts-page-container {
+  background-color: #E8D7FD;
+  height: 90vh;
+  padding-top: 60px;
+}
+
+.alerts-main-content {
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.scrollable-alerts{
+    max-height: 65vh;
+    padding: 10px 20px;
+    overflow-y: auto;
+}
