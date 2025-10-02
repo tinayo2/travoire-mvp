@@ -1,3 +1,14 @@
+@keyframes scrollUp {
+  from {
+    transform: translateY(0); /* Start at the original vertical position */
+  }
+  /* Shift up by exactly half the total height of the content (50%) */
+  to {
+    transform: translateY(-800%); 
+  }
+}
+
+
 .landing-page-content {
   margin-top: 0px; /* Adjust this value based on your header's actual height */
   padding: -5rem; /* Add some general padding */
@@ -26,6 +37,24 @@
   padding: 30px;
   overflow-y: scroll; /* Allows vertical scrolling inside this panel */
   -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS */
+
+  height: 100vh; 
+  overflow: hidden; 
+  min-height: 100vh;
+}
+
+.infinite-scroll-container {
+  /* CHANGE: Stack items vertically */
+  display: flex;
+  flex-direction: column; 
+  
+  /* CHANGE: Auto height to fit all cards, allow width to fit the panel */
+  height: 400%; /* Double the height to hold the original content + duplicate */
+  width: 100%;
+  
+  /* Apply the new vertical animation */
+  animation: scrollUp 80s linear infinite; 
+  pointer-events: none;
 }
 
 .right-panel {

@@ -55,16 +55,23 @@ function LandingPage() {
 
       <div className="landing-page-split">
         <div className="left-panel">
-          {/* We'll use this panel for the grid of cards */}
-          <div className="card-grid">
-           {featuredDestinations.map(destination => (
-             <ItineraryCard
-              key={destination.id} // Important for React list rendering
-              image={destination.image}
-              title={destination.title}
-              location={destination.location}
-             />
-           ))}
+          <div className="card-grid infinite-scroll-container"> 
+             {featuredDestinations.map((destination, index) => (
+                <ItineraryCard key={`original-${index}`} {...destination} /> 
+             ))}
+    
+             {/* DUPLICATE CARDS (For seamless loop) */}
+             {featuredDestinations.map((destination, index) => (
+                <ItineraryCard key={`duplicate-${index}`} {...destination} /> 
+             ))}
+
+             {featuredDestinations.map((destination, index) => (
+                <ItineraryCard key={`duplicate-${index}`} {...destination} /> 
+             ))}
+
+             {featuredDestinations.map((destination, index) => (
+                <ItineraryCard key={`duplicate-${index}`} {...destination} /> 
+             ))}
           </div>
         </div>  
 
