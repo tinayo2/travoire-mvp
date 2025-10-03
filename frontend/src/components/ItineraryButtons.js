@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import './ItineraryButtons.css';
 import dropdown from '../assets/images/dropdown.svg';
 
@@ -31,7 +32,9 @@ function ItineraryButtons() {
                     </div>
                   )}
         </div>
-        <button className="filter-button active">New Itinerary</button>
+        <Link to="/home" className="new-itinerary-link">
+          <button className="filter-button active">New Itinerary</button>
+        </Link>  
         
       </div>
     </div>

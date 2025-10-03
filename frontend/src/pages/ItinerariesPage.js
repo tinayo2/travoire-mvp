@@ -44,7 +44,7 @@ function ItinerariesPage() {
           <h2>This Month</h2>
           <div className="scroll-container">
             {thisMonth.map((item, index) => (
-              <SavedItiCards key={index} {...item} />
+              <SavedItiCards key={index} {...item} id={item.id}/>
             ))}
           </div>
         </div>
@@ -54,7 +54,7 @@ function ItinerariesPage() {
           <h2>Next Month</h2>
           <div className="scroll-container">
             {nextMonth.map((item, index) => (
-              <SavedItiCards key={index + 10} {...item} />
+              <SavedItiCards key={index + 10} {...item} id={item.id}/>
             ))}
           </div>
         </div>

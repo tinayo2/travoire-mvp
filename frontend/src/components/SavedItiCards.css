@@ -1,5 +1,6 @@
 .ip-card {
   position: relative;
+  cursor: pointer;
   border-radius: 12px;
   width: 250px;
   height: 300px;

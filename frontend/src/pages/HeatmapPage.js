@@ -40,7 +40,7 @@ function HeatmapPage() {
                         <div className="scrollable-cards">
                           <div className="locations-wrapper">
                             {dummyLocations.map((location, index) => (
-                                <LocationCard key={location.id} {...location} index={index} />
+                                <LocationCard key={location.id} {...location} index={index} id={location.id} image={location.image}/>
                             ))}
                           </div>
                         </div> 

@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import HeatmapPage from './pages/HeatmapPage';
 import AlertsPage from './pages/AlertsPage';
 import ItinerariesPage from './pages/ItinerariesPage';
+import ItineraryDetailPage from './pages/ItineraryDetailPage';
 import './App.css'; // You can keep this for general app styling
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />
         <Route path="/alerts" element={<AlertsPage />} />
+        <Route path="/itinerary/:id" element={<ItineraryDetailPage />} />
         <Route path="/itineraries" element={<ItinerariesPage />} />
       </Routes>
     </div>
